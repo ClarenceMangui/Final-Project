@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&family=Tangerine&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    animation:entrance 2000ms 1 linear;
+    -webkit-animation:entrance 2000ms 1 linear;
+}
+@keyframes entrance{
+    from{
+        background-color: grey;
+        clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+    }
+    to{
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #171427;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #ffff;
+}
+img{
+    width: 100%;
+}
+body{
+color: var(--text-color);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+section{
+    padding: 4rem 0  3rem;
+}
+/*Header*/
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width : 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    box-shadow: 2px 2px 5px grey;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: #D3D3D3;
+}
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+.man{
+    background-image: url(../pictures/about.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+.about{
+    background-color: #171427;
+}
+.about-text{
+    width:80%;
+    margin:0 auto;
+    padding-top: 1rem;
+    font-size: 1em;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+.about-text span{
+    font-size: 2em;
+    font-family: 'Dancing Script';
+}
+.about p{
+    font-size: 1.25em;
+}
+.about h1{
+    letter-spacing: .5em;
+}
+.mission-vision{
+    display: flex;
+    flex-direction: column;
+}
+.mission-img{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+}
+.mission-img img{
+    box-shadow: 0 0 10px white;
+    width:20vw;
+
+}
+
+.statement{
+    padding-top: 2rem;
+    width:90%;
+    margin:0 auto;
+    color:white;
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.statement h1{
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.statement p{
+    text-align: center;
+}
+footer{
+    border-top: solid 1px rgb(134, 123, 123);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text-color);
+}
+.credits{
+    margin-top: .5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .credits p{
+    text-align: center;
+    color:white;
+}
+.links{
+    display: flex;
+    margin:1rem 0;
+    gap:1rem;
+}
+.links img{
+    cursor: pointer;
+    filter:drop-shadow(0 0 3px white);
+    width:34px;
+    -webkit-filter:drop-shadow(0 0 3px white);
+    transition: all 350ms;
+    -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    -ms-transition: all 350ms;
+    -o-transition: all 350ms;
+}
+.links img:hover{
+    scale:1.1;
+}
+footer h1{
+    color:white;
+}
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text-footer h1{
+    font-family: 'Poppins';
+    letter-spacing: .5em;
+    color:gold;
+}
+.text-footer p{
+    font-style: italic;
+    color:#2c2c2c;
+    background-color: gold;
+    font-weight: bolder;
+    width:20vw;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email{
+
+    width:90%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.email *{
+    margin:.5rem 0;
+}
+.email button{
+    width:10vw;
+}
+.email h1{
+    text-align: center;
+}
+.email input, .email textarea, .email button{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 1.5em;
+    width:50%;
+    margin:.25rem auto;
+}
+.email button{
+    width:20%;
+}
+@media(min-width:600px) and (max-width:1280px){
+
+    .text-footer p{
+        width:80%;
+    }
+}
+@media(max-width:428px){
+    .man{
+        margin-top: 3rem;
+        background-image: url(../pictures/charles-gaudreault-qmTQW6aMNZU-unsplash.jpg);
+        background-size: cover;
+        min-height:100vh;
+        background-attachment: fixed;
+    }
+    .about-text h1{
+        text-align: center;
+        letter-spacing: .5em;
+    }
+    .text-footer h1{
+        letter-spacing: .2em;
+        font-size: 1.5em;
+    }
+    .text-footer p{
+        width:90%;
+    }
+    .mission-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .mission-img img{
+        width:100%;
+    }
+    .email button{
+        width:40vw;
+    }
+    .email input, .email textarea, .email button{
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        font-size: 1.5em;
+        width:70%;
+        margin:.25rem auto;
+    }
+    .email button{
+        width:30%;
+    }
+}
